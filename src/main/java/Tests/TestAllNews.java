@@ -13,7 +13,7 @@ public class TestAllNews extends TestBase {
         PageAllNews pageAllNews = new PageAllNews(getWebDriver());
         pageAllNews.closeWindow();
         pageAllNews.allNews();
-        //Assert.assertTrue(pageAllNews.periodFrom("2013"));
+        Assert.assertTrue(pageAllNews.periodFrom("2013"));
 
         String checkTwo = pageAllNews.getPeriod();
         Assert.assertEquals(checkTwo,"https://www.e1.ru/news/?dateFrom=01.07.2013&dateTo=02.07.2013");

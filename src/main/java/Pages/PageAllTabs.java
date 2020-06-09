@@ -15,10 +15,10 @@ public class PageAllTabs extends PageBase{
     public void allTabs(){
 
         waitToBeVisible(By.xpath("/html[1]/body[1]/div[3]/div[2]/header[1]/div[1]/div[1]/ul[1]"),50);
-        List <WebElement> allElements = getWebDriver().findElements(By.className("IJdb"));
+        List <WebElement> allElements = getWebDriver().findElements(By.className("MVcl"));
 
-        for(int i = 0; i < allElements.size(); i++){
-            System.out.println("Все элементы верхнего блока меню: " + allElements.get(i));
+        for(int i = 0; i <= 6; i++){
+            System.out.println("All elements from line menu: " + allElements.get(i));
             allElements.get(i).click();
         }
 

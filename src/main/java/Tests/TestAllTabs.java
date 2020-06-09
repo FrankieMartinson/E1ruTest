@@ -20,7 +20,7 @@ public class TestAllTabs extends TestBase {
     @AfterMethod
     public void allAsserts() throws InterruptedException {
 
-        //Assert.assertTrue(pageAllTabs.checkRealty(8));
+        Assert.assertTrue(pageAllTabs.checkRealty(8));
 
     }
 }
